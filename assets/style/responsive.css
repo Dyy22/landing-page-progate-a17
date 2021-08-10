@@ -1,0 +1,110 @@
+/* tablet 835px */
+@media (max-width: 835px) {
+    #home {
+        background-image: linear-gradient(90deg, rgba(0,0,0,.5) 0%, rgba(0,0,0,.5) 100%), url(/assets/images/bg-home.jpg);
+        background-size: cover;
+        background-position: center;
+        color: rgb(255, 255, 255);
+    }
+
+    nav {
+        background-color: white;
+        box-shadow: 0 3px 1rem rgba(0, 0, 0, .1);
+    }
+    
+    #home img {
+        display: none;
+    }
+
+    #home .heading {
+        width: 100%;
+        text-align: center;
+    }
+
+    #home h1 {
+        font-size: 70px;
+        margin-bottom: 20px;
+    }
+
+    #home p {
+        font-size: 28px;
+        margin-bottom: 50px;
+    }
+
+    #home span a {
+        font-size: 28px;
+        padding: 20px 40px; 
+    }
+}
+
+/* tablet 800px */
+@media (max-width: 800px) {
+    nav ul {
+        position: absolute;
+        right: 0;
+        top: 80px;
+        height: 70vh;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 10px 1rem -10px rgba(0, 0, 0, .1);
+        z-index: -1;
+        width: 40%;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    nav ul li a {
+        padding: 20px 40px;
+        font-size: 1.3em;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    nav ul.slide {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* mobile 600px*/
+@media (max-width: 600px) {
+    nav .logo {
+        font-size: 24px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        display: inline-block;
+        text-align: center;
+        height: 50vh;
+    }
+
+    nav ul li {
+        margin: 0;
+        height: 80px;
+    }
+
+    #home h1 {
+        font-size: 45px;
+        margin-bottom: 15px;
+    }
+
+    #home p {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    #home span a {
+        font-size: 18px;
+        padding: 13px 26px;
+    }
+}

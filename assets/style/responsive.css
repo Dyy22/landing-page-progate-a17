@@ -95,6 +95,10 @@
 
 /* tablet 800px */
 @media (max-width: 800px) {
+    .wrapper {
+        padding: 0 50px;
+    }
+
     nav {
         line-height: 60px;
     }
